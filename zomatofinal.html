@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pdiv {
+            width: 80%;
+            /* height: 1000px; */
+            /* background-color: violet; */
+            position: relative;
+            left: 140px;
+        }
+
+        .div1 {
+            width: 100%;
+            height: 80px;
+        }
+
+        .c1div1 {
+            width: 15%;
+            height: 80px;
+            /* background-color: aqua; */
+            float: left;
+        }
+
+        .c2div1 {
+            width: 15%;
+            height: 80px;
+            /* background-color: aqua; */
+            margin-left: 30px;
+            float: left;
+        }
+
+        .c3div1 {
+            width: 40%;
+            height: 80px;
+            /* background-color: aqua; */
+            margin-left: 30px;
+            float: left;
+        }
+
+        .c4div1 {
+            width: 7%;
+            height: 80px;
+            /* background-color: aqua; */
+            margin-left: 100px;
+            float: left;
+        }
+
+        .c5div1 {
+            width: 7%;
+            height: 80px;
+            /* background-color: aqua; */
+            margin-left: 10px;
+            float: left;
+        }
+
+        .p1div1 {
+            font-weight: bolder;
+            margin-left: 0px;
+            margin-top: 3px;
+            font-size: 60px;
+            font-style: oblique;
+
+        }
+
+        .a1div1 {
+            text-decoration: none;
+        }
+
+        .a1div1:visited {
+            color: black;
+        }
+
+        .inp1div2 {
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        .inp2div2 {
+            margin-top: 30px;
+            padding: 0px 180px;
+            margin-left: 10px;
+        }
+
+        .a1div2,
+        .a2div2 {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .a1div2:hover,
+        .a2div2:hover {
+            color: black;
+        }
+
+        .p1div2 {
+            margin-top: 30px;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .div2 {
+            width: 100%;
+            height: 50px;
+            /* background-color: blue; */
+
+        }
+
+        .s1div2,
+        .s2div2,
+        .s3div2 {
+            position: relative;
+            top: 15px;
+            color: gray;
+        }
+
+        .s3div2 {
+            color: lightgray;
+        }
+
+        .s1div2:hover,
+        .s2div2:hover {
+            color: red;
+        }
+
+        .div3 {
+            width: 100%;
+            height: 100px;
+            /* background-color: aqua; */
+        }
+
+        .c1div3 {
+            width: 18%;
+            height: 100px;
+            /* background-color: cadetblue; */
+            float: left;
+        }
+
+        .c2div3 {
+            width: 18%;
+            height: 100px;
+            /* background-color: cadetblue; */
+            margin-left: 20px;
+            float: left;
+        }
+
+        .c3div3 {
+            width: 18%;
+            height: 100px;
+            /* background-color: cadetblue; */
+            margin-left: 20px;
+            float: left;
+        }
+
+        .c11div3,
+        .c21div3,
+        .c31div3 {
+            width: 40%;
+            height: 100px;
+            /* background-color: blueviolet; */
+            float: left;
+        }
+
+        .c12div3,
+        .c22div3,
+        .c32div3 {
+            width: 60%;
+            height: 100px;
+            /* background-color: mediumvioletred; */
+            float: left;
+        }
+
+        .pdiv3 {
+            font-size: 25px;
+            margin-left: 5px;
+            color: gray;
+        }
+
+        .pdiv3:hover {
+            color: black;
+        }
+
+        .c1div3:hover,
+        .c2div3:hover,
+        .c3div3:hover {
+            border-bottom: 3px solid red;
+            transition: all 0.5s;
+        }
+
+        .div4 {
+            width: 100%;
+            height: 100px;
+            position: sticky;
+            top: 0;
+             background-color: white; 
+             z-index: 10;
+            /* background-color: coral;  */
+        }
+
+        .c1div4 {
+            width: 10%;
+            height: 40px;
+            /* background-color: red; */
+            float: left;
+            margin-top: 30px;
+            border-radius: 10px;
+            border: 1px solid #afafaf;
+        }
+
+        .c2div4,
+        .c3div4,
+        .c4div4 {
+            width: 10%;
+            height: 40px;
+            /* background-color: red; */
+            float: left;
+            margin-top: 30px;
+            margin-left: 20px;
+            border-radius: 10px;
+            border: 1px solid #afafaf;
+        }
+
+        .p1div4,
+        .p3div4,
+        .p4div4 {
+            margin-top: 10px;
+            color: #afafaf;
+            /* margin-left: 30px; */
+        }
+
+        .p2div4 {
+            margin-top: 10px;
+            color: #afafaf;
+            margin-left: 20px;
+        }
+
+        .p1div4 {
+            margin-left: 30px;
+        }
+
+        .p3div4 {
+            margin-left: 25px;
+        }
+
+        .p4div4 {
+            margin-left: 30px;
+        }
+
+        .c1div4:hover,
+        .c2div4:hover,
+        .c3div4:hover,
+        .c4div4:hover {
+            background-color: red;
+        }
+
+        .c1div4:hover .p1div4,
+        .c2div4:hover .p2div4,
+        .c3div4:hover .p3div4,
+        .c4div4:hover .p4div4 {
+            color: white;
+        }
+
+        .div5 {
+            width: 100%;
+            height: 280px;
+            background-color: #f8f8f8;
+        }
+
+        .c1div5 {
+            width: 100%;
+            height: 60px;
+            /* background-color: aqua; */
+        }
+
+        .h3div5 {
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .c2div5 {
+            width: 100%;
+            height: 220px;
+            /* background-color: coral; */
+        }
+
+        .c21div5 {
+            width: 16%;
+            height: 200px;
+            background-color: blueviolet;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .c22div5,
+        .c23div5,
+        .c24div5,
+        .c25div5 {
+            width: 16%;
+            height: 200px;
+            background-color: blueviolet;
+            float: left;
+            margin-left: 40px;
+            border-radius: 50%;
+        }
+
+        .div6 {
+            width: 100%;
+            height: 280px;
+            /* background-color: orange; */
+            margin-top: 20px;
+        }
+
+        .c1div6 {
+            width: 100%;
+            height: 60px;
+            /* background-color: aqua;  */
+        }
+
+        .c21div6 {
+            width: 16%;
+            height: 200px;
+            background-color: blueviolet;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .c22div6,
+        .c23div6,
+        .c24div6,
+        .c25div6 {
+            width: 16%;
+            height: 200px;
+            /* background-color: blueviolet; */
+            float: left;
+            margin-left: 40px;
+            /* border-radius: 50%; */
+        }
+
+        .div7 {
+            width: 100%;
+            height: 3350px;
+            /* background-color: tomato; */
+        }
+
+        .c1div7 {
+            width: 100%;
+            height: 400px;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .c11div7,
+        .c12div7,
+        .c13div7 {
+            width: 30%;
+            height: 390px;
+            /* background-color: blueviolet; */
+            display: flex;
+            justify-content: space-around;
+            border-radius: 20px;
+            flex-wrap:wrap;
+        }
+
+        .c11div7:hover,
+        .c12div7:hover,
+        .c13div7:hover {
+            transform: scale(1.02, 1.02);
+            box-shadow: 5px 5px 20px rgb(111, 110, 110), -5px 5px 20px rgb(111, 110, 110), 5px -5px 20px rgb(111, 110, 110), -5px -5px 20px rgb(111, 110, 110);
+        }
+
+        .c111div7,
+        .c121div7,
+        .c131div7 {
+            width: 90%;
+            height: 350px;
+            /* background-color: chartreuse; */
+            margin-top: 20px;
+        }
+        .c2div7 {
+            width: 100%;
+            height: 400px;
+            /* background-color: aqua; */
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .c21div7,
+        .c22div7,
+        .c23div7 {
+            width: 30%;
+            height: 390px;
+            /* background-color: blueviolet; */
+            display: flex;
+            justify-content: space-around;
+            border-radius: 20px;
+            flex-wrap:wrap;
+        }
+
+        .c21div7:hover,
+        .c22div7:hover,
+        .c23div7:hover {
+            transform: scale(1.02, 1.02);
+            box-shadow: 5px 5px 20px rgb(111, 110, 110), -5px 5px 20px rgb(111, 110, 110), 5px -5px 20px rgb(111, 110, 110), -5px -5px 20px rgb(111, 110, 110);
+        }
+
+        .c211div7,
+        .c221div7,
+        .c231div7 {
+            width: 90%;
+            height: 350px;
+            /* background-color: chartreuse; */
+            margin-top: 20px;
+        }
+
+        .c3div7 {
+            width: 100%;
+            height: 400px;
+            /* background-color: aqua; */
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .c31div7,
+        .c32div7,
+        .c33div7 {
+            width: 30%;
+            height: 390px;
+            /* background-color: blueviolet; */
+            display: flex;
+            justify-content: space-around;
+            border-radius: 20px;
+            flex-wrap:wrap;
+        }
+
+        .c31div7:hover,
+        .c32div7:hover,
+        .c33div7:hover {
+            transform: scale(1.02, 1.02);
+            box-shadow: 5px 5px 20px rgb(111, 110, 110), -5px 5px 20px rgb(111, 110, 110), 5px -5px 20px rgb(111, 110, 110), -5px -5px 20px rgb(111, 110, 110);
+        }
+
+        .c311div7,
+        .c321div7,
+        .c331div7 {
+            width: 90%;
+            height: 350px;
+            /* background-color: chartreuse; */
+            margin-top: 20px;
+        }
+        .c4div7 {
+            width: 100%;
+            height: 400px;
+            /* background-color: aqua; */
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .c41div7,
+        .c42div7,
+        .c43div7 {
+            width: 30%;
+            height: 390px;
+            /* background-color: blueviolet; */
+            display: flex;
+            justify-content: space-around;
+            border-radius: 20px;
+            flex-wrap:wrap;
+        }
+
+        .c41div7:hover,
+        .c42div7:hover,
+        .c43div7:hover {
+            transform: scale(1.02, 1.02);
+            box-shadow: 5px 5px 20px rgb(111, 110, 110), -5px 5px 20px rgb(111, 110, 110), 5px -5px 20px rgb(111, 110, 110), -5px -5px 20px rgb(111, 110, 110);
+        }
+
+        .c411div7,
+        .c421div7,
+        .c431div7 {
+            width: 90%;
+            height: 350px;
+            /* background-color: chartreuse; */
+            margin-top: 20px;
+        }
+        .c5div7 {
+            width: 100%;
+            height: 400px;
+            /* background-color: aqua; */
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .c51div7,
+        .c52div7,
+        .c53div7 {
+            width: 30%;
+            height: 390px;
+            /* background-color: blueviolet; */
+            display: flex;
+            justify-content: space-around;
+            border-radius: 20px;
+            flex-wrap:wrap;
+        }
+
+        .c51div7:hover,
+        .c52div7:hover,
+        .c53div7:hover {
+            transform: scale(1.02, 1.02);
+            box-shadow: 5px 5px 20px rgb(111, 110, 110), -5px 5px 20px rgb(111, 110, 110), 5px -5px 20px rgb(111, 110, 110), -5px -5px 20px rgb(111, 110, 110);
+        }
+
+        .c511div7,
+        .c521div7,
+        .c531div7 {
+            width: 90%;
+            height: 350px;
+            /* background-color: chartreuse; */
+            margin-top: 20px;
+        }
+        .c6div7 {
+            width: 100%;
+            height: 400px;
+            /* background-color: aqua; */
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .c61div7,
+        .c62div7,
+        .c63div7 {
+            width: 30%;
+            height: 390px;
+            /* background-color: blueviolet; */
+            display: flex;
+            justify-content: space-around;
+            border-radius: 20px;
+            flex-wrap:wrap;
+        }
+
+        .c61div7:hover,
+        .c62div7:hover,
+        .c63div7:hover {
+            transform: scale(1.02, 1.02);
+            box-shadow: 5px 5px 20px rgb(111, 110, 110), -5px 5px 20px rgb(111, 110, 110), 5px -5px 20px rgb(111, 110, 110), -5px -5px 20px rgb(111, 110, 110);
+        }
+
+        .c611div7,
+        .c621div7,
+        .c631div7 {
+            width: 90%;
+            height: 350px;
+            /* background-color: chartreuse; */
+            margin-top: 20px;
+        }
+        .c7div7 {
+            width: 100%;
+            height: 400px;
+            /* background-color: aqua; */
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .c71div7,
+        .c72div7,
+        .c73div7 {
+            width: 30%;
+            height: 390px;
+            /* background-color: blueviolet; */
+            display: flex;
+            justify-content: space-around;
+            border-radius: 20px;
+            flex-wrap:wrap;
+        }
+
+        .c71div7:hover,
+        .c72div7:hover,
+        .c73div7:hover {
+            transform: scale(1.02, 1.02);
+            box-shadow: 5px 5px 20px rgb(111, 110, 110), -5px 5px 20px rgb(111, 110, 110), 5px -5px 20px rgb(111, 110, 110), -5px -5px 20px rgb(111, 110, 110);
+        }
+
+        .c711div7,
+        .c721div7,
+        .c731div7 {
+            width: 90%;
+            height: 350px;
+            /* background-color: chartreuse; */
+            margin-top: 20px;
+        }
+        .div8
+        {
+            width: 100%;
+            height: 500px;
+            background-color: #fcfcfc;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+        }
+        .c1div8,.c2div8,.c3div8,.c4div8,.c5div8
+        {
+            width: 100%;
+            height: 80px;
+            /* background-color: aqua; */
+        }
+
+        .div9
+        {
+            width: 100%;
+            height: 120px;
+            background-color: #f8f8f8;
+            position: relative;
+        }
+        .c1div9
+        {
+            width: 20%;
+            height: 80px;
+            /* background-color: brown; */
+            position: absolute;
+            top: 30px;
+        }
+        .p1div9 {
+            font-weight: bolder;
+            margin-left: 0px;
+            margin-top: 3px;
+            font-size: 60px;
+            font-style: oblique;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        .c2div9
+        {
+            width: 50%;
+            height: 80px;
+            /* background-color: aqua; */
+            position: absolute;
+            left: 228px;
+            top: 30px;
+        }
+        .c3div9
+        {
+            width: 12%;
+            height: 80px;
+            /* background-color: blue; */
+            position: absolute;
+            top: 30px;
+            left: 830px;
+            /* border-radius: 15px; */
+        }
+        .c4div9
+        {
+            width: 12%;
+            height: 80px;
+            /* background-color: blue; */
+            position: absolute;
+            top: 30px;
+            left: 990px;
+        }
+        .div10
+        {
+            width: 100%;
+            height: 300px;
+            background-color: #f8f8f8;
+            display: flex;
+        }
+        .c1div10
+        {
+            width: 20%;
+            height: 300px;
+            background-color: aqua;
+            float: left;
+        }
+        .c2div10,.c3div10,.c4div10,.c5div10
+        {
+            width: 20%;
+            height: 300px;
+            background-color: pink;
+            float: left;
+            margin-left: 30px;
+        }
+        .adiv10
+        {
+            text-decoration: none;
+        }
+        .adiv10:visited
+        {
+            color: black;
+        }
+        .pdiv10
+        {
+            color: #969696;
+        }
+        .pdiv10:hover
+        {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="pdiv">
+        <div class="div1">
+            <div class="c1div1">
+                <p class="p1div1"><a href="https://www.zomato.com/" class="a1div1">zomato</a></p>
+            </div>
+            <div class="c2div1">
+                <input type="search" list="state" placeholder="--SELECT STATE" class="inp1div2">
+                <datalist id="state">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chattisgarh">Chattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Orissa">Orissa</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarkhand">Uttarkhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </datalist>
+            </div>
+            <div class="c3div1">
+                <input type="search" class="inp2div2">
+            </div>
+            <div class="c4div1">
+                <a href="" class="a1div2">
+                    <p class="p1div2">Login</p>
+                </a>
+            </div>
+            <div class="c5div1">
+                <a href="" class="a2div2">
+                    <p class="p1div2">Sign up</p>
+                </a>
+            </div>
+        </div>
+        <div class="div2">
+            <span class="s1div2">Home /</span>
+            <span class="s2div2"> &nbsp; India /</span>
+            <span class="s3div2"> &nbsp; Kolkata Restaurants</span>
+        </div>
+        <div class="div3">
+            <a href="">
+                <div class="c1div3">
+                    <div class="c11div3">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png"
+                            alt="" style="width: 100%;">
+                    </div>
+                    <div class="c12div3">
+                        <p class="pdiv3">Delivery</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.zomato.com/kolkata/dine-out">
+                <div class="c2div3">
+                    <div class="c21div3">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png"
+                            alt="" style="width: 100%;">
+                    </div>
+                    <div class="c22div3">
+                        <p class="pdiv3">Dining Out</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.zomato.com/kolkata/drinks-and-nightlife">
+                <div class="c3div3">
+                    <div class="c31div3">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/855687dc64a5e06d737dae45b7f6a13b1616149818.png"
+                            alt="" style="width: 100%;">
+                    </div>
+                    <div class="c32div3">
+                        <p class="pdiv3">NightLife</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <br>
+
+        <div class="div4">
+            <div class="c1div4">
+                <p class="p1div4">Filters</p>
+            </div>
+            <div class="c2div4">
+                <p class="p2div4">Rating:4.0+</p>
+            </div>
+            <div class="c3div4">
+                <p class="p3div4">Pure Veg</p>
+            </div>
+            <div class="c4div4">
+                <p class="p4div4">Cusines</p>
+            </div>
+        </div>
+
+        <div class="div5">
+            <div class="c1div5">
+                <h3 class="h3div5">Inspiration for your first order</h3>
+            </div>
+            <div class="c2div5">
+                <marquee behavior="scroll" direction="left" scrollamount="30">
+                    <div class="c21div5">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/f9d277eb1668d7abf9235302402b06001632716602.png"
+                            alt="" style="width: 100%;height: 200px; border-radius: 50%;">
+                    </div>
+                    <div class="c22div5">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/fc641efbb73b10484257f295ef0b9b981634401116.png"
+                            alt="" style="width: 100%;height: 200px; border-radius: 50%;">
+                    </div>
+                    <div class="c23div5">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/8dc39742916ddc369ebeb91928391b931632716660.png"
+                            alt="" style="width: 100%;height: 200px; border-radius: 50%;">
+                    </div>
+                    <div class="c24div5">
+                        <img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png"
+                            alt="" style="width: 100%;height: 200px; border-radius: 50%;">
+                    </div>
+                    <div class="c25div5">
+                        <img src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png"
+                            alt="" style="width: 100%;height: 200px; border-radius: 50%;">
+                    </div>
+                </marquee>
+            </div>
+        </div>
+
+        <div class="div6">
+            <div class="c1div6">
+                <h3 class="h3div5">Top brands for you</h3>
+            </div>
+            <div class="c2div5">
+                <marquee behavior="scroll" direction="right" scrollamount="30">
+                    <div class="c21div6">
+                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/3a58b67479fd290ff96996002438736e_1672389253.png?output-format=webp"
+                            alt="" style="width: 100%;height: 200px; border-radius: 20px;">
+                    </div>
+                    <div class="c22div6">
+                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/560b209a689eefa9feb367b5d5604097_1611382952.png?output-format=webp"
+                            alt="" style="width: 100%;height: 200px; border-radius: 20px;">
+                    </div>
+                    <div class="c23div6">
+                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/6a11fd0f30c9fd9ceaff2f5b21f61d23_1617188103.png?output-format=webp"
+                            alt="" style="width: 100%;height: 200px; border-radius: 20px;">
+                    </div>
+                    <div class="c24div6">
+                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/c38f7540bcc5a38e918856ac06409056_1504531339.png?output-format=webp"
+                            alt="" style="width: 100%;height: 200px; border-radius: 20px;">
+                    </div>
+                    <div class="c25div6">
+                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/b8da5e372048dceb188471efcb7042c1_1629440093.png?output-format=webp"
+                            alt="" style="width: 100%;height: 200px; border-radius: 20px;">
+                    </div>
+                </marquee>
+            </div>
+        </div>
+
+        <br><br> <br> <br>
+
+        <div class="div7">
+            <h1 class="h3div5">Delivery Restaurants in Kolkata</h1>
+            <div class="c1div7">
+                <div class="c11div7">
+                    <div class="c111div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/3/18947213/0716b5947b013e6dc41f5defe0bb72e0_o2_featured_v2.jpg?output-format=webp"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c12div7">
+                    <div class="c121div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/9/21429/d505be0b3ee11e4f79581b7b9df2d04a_o2_featured_v2.jpg?output-format=webp"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c13div7">
+                    <div class="c131div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/3/18343753/39458ad89c80f6fcae3038eb4fd8c982_o2_featured_v2.jpg?output-format=webp"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+
+            </div>
+            <div class="c2div7">
+                <div class="c21div7">
+                    <div class="c211div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/8/18853678/6e268aba3667809b705e2e8484bf825b_o2_featured_v2.jpg?output-format=webp"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c22div7">
+                    <div class="c221div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/4/21764/5763a747e359a3c54f2f7906c7eda2ba_o2_featured_v2.jpg?output-format=webp"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c23div7">
+                    <div class="c231div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/0/22460/045fa3e9db1354d1675baacc778cd33b_o2_featured_v2.jpg?output-format=webp"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="c3div7">
+                <div class="c31div7">
+                    <div class="c311div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/4/19193204/8c49ba335683507ba6ddee2dc84966e8_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c32div7">
+                    <div class="c321div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/7/18578307/d60d81d492555d99f95894d9bbb960b7_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c33div7">
+                    <div class="c331div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/7/20797/7c440b99b4140cce88505e64bb690b0f_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="c4div7">
+                <div class="c41div7">
+                    <div class="c411div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/5/19055815/f4ec28bb17b5e6e6e1cdb7e15f4452cd_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c42div7">
+                    <div class="c421div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/4/19068604/4de4976b95304b9835eb76258a683e77_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c43div7">
+                    <div class="c431div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/8/20728/f31733dfcef4c1edb388b77619e07a59_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="c5div7">
+                <div class="c51div7">
+                    <div class="c511div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/3/19389263/75fb72db1f40ce9c2d894f0c431c1ea9_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c52div7">
+                    <div class="c521div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/5/22165/150c263f0ee665a268ff215d85082e19_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c53div7">
+                    <div class="c531div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/5/21125/d3104038b1830f341869f2bf2eb5539e_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="c6div7">
+                <div class="c61div7">
+                    <div class="c611div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/5/18573295/bd6d35499c5fb33bea73c32bbf4b0237_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c62div7">
+                    <div class="c621div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/7/22077/df63da91354e1b0345252bc49000145b_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c63div7">
+                    <div class="c631div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/8/19137878/edae7f8ddd7d4b18a9f176c9a48331a4_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="c7div7">
+                <div class="c71div7">
+                    <div class="c711div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/1/20133711/5196a15436ee0262c7d7ff748ef793fc_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c72div7">
+                    <div class="c721div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/3/18767033/b59547faeafbbe4e3fc803be7fefd781_o2_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="c73div7">
+                    <div class="c731div7">
+                        <img src="https://b.zmtcdn.com/data/pictures/8/20795578/43853c37144dfc410ac12f936e0fd6d4_featured_v2.jpg"
+                            alt="" style="width: 100%;height: 350px;border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div8">
+            <div class="c1div8"><h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                ">Explore options near me</h1></div>
+            <div class="c2div8">
+                <select style="padding: 30px 477px; ">
+                    <option value="Day">Popular cuisines near me</option>
+                    <option value="">Bakery food near me</option>
+                    <option value="">Bengali food near me </option>
+                    <option value="">Beverages food near me</option>
+                    <option value="">Biryani food near me</option>
+                    <option value="">Burger food near me</option>
+                    <option value="">Chinese food near me</option>
+                    <option value="">Continental food near me</option>
+                    <option value="">Desserts food near me</option>
+                    <option value="">Kebab food near me</option>
+                    <option value="">Momos food near me</option>
+                    <option value="">Mughlai food near me</option>
+                    <option value="">North Indian food near me</option>
+                    <option value="">Pizza food near me</option>
+                    
+                </select>
+        
+            </div>
+            <div class="c3div8">
+                <select style="padding: 30px 454px;">
+                    <option value="Day">Popular restaurant types near me</option>
+                    <option value="">Bakeries near me       Kiosks near me</option>
+                    <option value="">Bhojanalya near me </option>
+                    <option value="">Cafés near me</option>
+                    <option value="">Casual Dining near me</option>
+                    <option value="">Clubs near me</option>
+                    <option value="">Chinese food near me</option>
+                    <option value="">Continental food near me</option>
+                    <option value="">Confectioneries near me</option>
+                    <option value="">Dessert Parlors near me</option>
+                    <option value="">Dhabas near me</option>
+                    <option value="">Fine Dining near me</option>
+                    <option value="">Food Courts near me</option>
+                    <option value="">Food Trucks near me</option>
+                </select>
+            </div>
+            <div class="c4div8">
+                <select style="padding: 30px 486px;">
+                    <option value="">Top Restaurant Chains</option>
+                    <option value="">Burger King</option>
+                    <option value="">Burger Singh</option>
+                    <option value="">Domino's</option>
+                    <option value="">Haldiram's</option>
+                    <option value="">KFC</option>
+                </select>
+            </div>
+            <div class="c5div8">
+                <select style="padding: 30px 494px;">
+                    <option value="">Cities We Deliver To</option>
+                    <option value="">Delhi NCR</option>
+                    <option value="">Kolkata</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Bengaluru</option>
+                    <option value="">Pune</option>
+                    <option value="">Hyderabad</option>
+                    <option value="">Chennai</option>
+                    <option value="">See more</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="div9">
+                <div class="c1div9">
+                    <p class="p1div9">zomato</p>
+                </div>
+                <div class="c2div9"></div>
+                <div class="c3div9">
+                    <select style="padding: 30px 1px;border-radius: 15px;">
+                        <option value="">🇮🇳India</option>
+                        <option value="">🇦🇺Australia</option>
+                        <option value="">🇧🇷Brazil</option>
+                        <option value="">🇨🇦Canada</option>
+                        <option value="">🇨🇱Chile</option>
+                        <option value="">🇨🇿Czech Republic</option>
+                        <option value="">🇮🇩Indonesia</option>
+                        <option value="">🇮🇪Ireland</option>
+                        <option value="">🇮🇹Italy</option>
+                        <option value="">🇱🇧Lebanon</option>
+                        <option value="">🇲🇾Malaysia</option>
+                        <option value="">🇳🇿New Zeland</option>
+                        <option value="">🇵🇭Philippines</option>
+                        <option value="">🇵🇱Poland</option>
+                        <option value="">🇵🇹Portugal</option>
+                        <option value="">🇶🇦Qatar</option>
+                        <option value="">🇸🇬Singapore</option>
+                        <option value="">🇸🇰Slovakia</option>
+                        <option value="">🇿🇦South Africa</option>
+                        <option value="">🇱🇰Sri Lanka</option>
+                        <option value="">🇹🇷Turkey</option>
+                        <option value="">🇦🇪UAE</option>
+                        <option value="">🇬🇧United Kingdom</option>
+                        <option value="">🇺🇸USA</option>
+                    </select>
+                </div>
+                <div class="c4div9">
+                    <select style="padding: 30px 13px;border-radius: 15px;">
+                        <option value="">English</option>
+                        <option value="">Turkce</option>
+                        <option value="">Hindi</option>
+                        <option value="">Portugues(BR)</option>
+                        <option value="">Indonesian</option>
+                        <option value="">Portugues(PT)</option>
+                        <option value="">Espanol</option>
+                        <option value="">Cestina</option>
+                        <option value="">Slovencina</option>
+                        <option value="">Polish</option>
+                        <option value="">Italian</option>
+                        <option value="">Vietnamese</option>
+                    </select>
+                </div>
+        </div>
+
+        <br>
+
+        <div class="div10">
+            <div class="c1div10">
+                <ol style="list-style-type: none;">
+                    <li>ABOUT ZOMATO</li>
+                    <li><a href="https://www.zomato.com/who-we-are" class="adiv10"><p class="pdiv10">Who We Are</p></a></li>
+                    <li><a href="https://blog.zomato.com/" class="adiv10"><p class="pdiv10">Blog</p></a></li>
+                    <li><a href="https://www.zomato.com/careers" class="adiv10"><p class="pdiv10">Work With Us</p></a></li>
+                    <li><a href="https://www.zomato.com/investor-relations" class="adiv10"><p class="pdiv10">Investor Relations</p></a></li>
+                    <li><a href="https://www.zomato.com/report-fraud" class="adiv10"><p class="pdiv10">Report Fraud</p></a></li>
+                    <li><a href="https://blog.zomato.com/press-kit" class="adiv10"><p class="pdiv10">Press Kit</p></a></li>
+                    <li><a href="https://www.zomato.com/contact" class="adiv10"><p class="pdiv10">Contact Us</p></a></li>
+                </ol>
+            </div>
+            <div class="c2div10">
+                <ol style="list-style-type: none;">
+                    <li>ZOMAVERSE</li>
+                    <li><a href="https://www.zomato.com/" class="adiv10"><p class="pdiv10">Zomato</p></a></li>
+                    <li><a href="https://blinkit.com/" class="adiv10"><p class="pdiv10">Blinkit</p></a></li>
+                    <li><a href="https://www.feedingindia.org/" class="adiv10"><p class="pdiv10">Feeding Media</p></a></li>
+                    <li><a href="https://www.hyperpure.com/" class="adiv10"><p class="pdiv10">Hyperpure</p></a></li>
+                    <li><a href="https://www.zomato.com/zomaland" class="adiv10"><p class="pdiv10">Zomaland</p></a></li>
+                </ol>
+            </div>
+            <div class="c3div10">
+                <ol style="list-style-type: none;">
+                    <li>FOR RESTAURANTS</li>
+                    <li><a href="https://www.zomato.com/partner-with-us" class="adiv10"><p class="pdiv10">Parterns with us</p></a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.application.services.partner&hl=en_IN&gl=US" class="adiv10"><p class="pdiv10">Apps for you</p></a></li>
+                </ol>
+                <br>
+                <ol style="list-style-type: none;">
+                    <li>FOR ENTERPRISES</li>
+                    <li><a href="https://www.zomato.com/enterprise-solutions" class="adiv10"><p class="pdiv10">Zomato for enterprises</p></a></li>
+                </ol>
+            </div>
+            <div class="c4div10">
+                <ol style="list-style-type: none;">
+                    <li>LEARN MORE</li>
+                    <li><a href="https://www.zomato.com/policies/privacy/" class="adiv10"><p class="pdiv10">Privacy</p></a></li>
+                    <li><a href="https://www.zomato.com/policies/security/" class="adiv10"><p class="pdiv10">Security</p></a></li>
+                    <li><a href="https://www.zomato.com/policies/terms-of-service/" class="adiv10"><p class="pdiv10">Terms</p></a></li>
+                    <li><a href="https://www.zomato.com/directory" class="adiv10"><p class="pdiv10">Sitemap</p></a></li>
+                </ol>
+            </div>
+            <div class="c5div10">
+                <ol style="list-style-type: none;">
+                    <li>SOCIAL LINKS</li>
+                    <li><a href="https://www.instagram.com/zomato/" class="adiv10">
+                        <img src="/Media/Images/insta.png" alt="" style="width: 20px;height: 20px;border-radius: 50%;margin-top: 15px;">
+                        </a>
+                        <a href="https://www.youtube.com/zomato" class="adiv10"><img src="/Media/Images/youtube2.png" alt="" style="width: 20px;height: 20px;border-radius: 50%;margin-top: 15px;"></a>
+                        <a href="https://twitter.com/zomato" class="adiv10"><img src="/Media/Images/twitter.png" alt="" style="width: 20px;height: 20px;border-radius: 50%;margin-top: 15px;"></a>
+                        <a href="https://www.facebook.com/zomato" class="adiv10"><img src="/Media/Images/facebook.webp" alt="" style="width: 20px;height: 20px;border-radius: 50%;margin-top: 15px;"></a>
+                        <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGvx612oZMuAAAAAYtHf_yg9HQ_0Sfzmb8VZzjXB_b6S4pYdcmNr8pAi3J7FaXwgWNRcacsmLS-l5S4kiNjsE073FsLQVFF0gOyMgPsLYBNJJOKB25AIqbTgFFXWHZvz6Kudvs=&original_referer=https://www.zomato.com/&sessionRedirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fzomato" class="adiv10"><img src="/Media/Images/linkdien.jpg" alt="" style="width: 20px;height: 20px;border-radius: 50%;margin-top: 15px;"></a>
+                    </li>
+                    <li><br></li>
+                    <li><br></li>
+                    <li><br></li>
+                    <li><img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="" style="width: 120px;height: 40px;"></li>
+                    <li><br></li>
+                    <li><img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="" style="width: 120px;height: 40px;"></li>
+                </ol>
+            </div>
+        </div>
+        <br> <br> <br> <br>
+        <hr>
+
+        <br><br>
+
+        <div class="div11">
+            <p style="background-color: #f8f8f8;font-size: 15px;color: #4f4f4f;">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
